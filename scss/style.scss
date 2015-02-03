@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'pfThin';
+    src: url('font/pfdintextpro-thin-webfont.eot');
+    src: url('font/pfdintextpro-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/pfdintextpro-thin-webfont.woff') format('woff'),
+         url('font/pfdintextpro-thin-webfont.ttf') format('truetype'),
+         url('font/pfdintextpro-thin-webfont.svg#pf_dintext_prothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'pfReg';
+    src: url('font/pfdintextpro_reg-webfont.eot');
+    src: url('font/pfdintextpro_reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/pfdintextpro_reg-webfont.woff') format('woff'),
+         url('font/pfdintextpro_reg-webfont.ttf') format('truetype'),
+         url('font/pfdintextpro_reg-webfont.svg#pf_dintext_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'pfBold';
+    src: url('font/pfdintextpro-bold-webfont.eot');
+    src: url('font/pfdintextpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/pfdintextpro-bold-webfont.woff') format('woff'),
+         url('font/pfdintextpro-bold-webfont.ttf') format('truetype'),
+         url('font/pfdintextpro-bold-webfont.svg#pf_dintext_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'pfLight';
+    src: url('font/pdfinpextpro-light-webfont.eot');
+    src: url('font/pdfinpextpro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/pdfinpextpro-light-webfont.woff') format('woff'),
+         url('font/pdfinpextpro-light-webfont.ttf') format('truetype'),
+         url('font/pdfinpextpro-light-webfont.svg#pf_dintext_prolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'pfMed';
+    src: url('font/pfdintextpro-medium-webfont.eot');
+    src: url('font/pfdintextpro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/pfdintextpro-medium-webfont.woff') format('woff'),
+         url('font/pfdintextpro-medium-webfont.ttf') format('truetype'),
+         url('font/pfdintextpro-medium-webfont.svg#pf_dintext_promedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{margin:0;padding:0;}
+/*=========== $ colors ===========*/
+$white:#fff;
+$menuLightBlue:#31a7f0;
+$menuBlue:#0093ec;
+$hBlue:#067ece;
+$headerText:#737373;
+$mainText:#303030;
+$mainTetxLight:#b1b1b1;
+$footerH:#fbfbfb;
+$footerMain:#f3f3f3;
+$footerLink:#2a5676;
+$footerDark:#4a4a4a;
+/*=========== $ colors ===========*/
+
+/* ========== $fonts =========== */
+	$main:13px 'Open sans',sans-serif;
+	$menuTop:13px 'pfLight',sans-serif;
+	$menuTopIn:14px 'pfLight',sans-serif;
+	$regular:'pfReg',sans-serif;
+	$medium:'pfMed',sans-serif;
+	$bold:'pfBold',sans-serif;
+	$light:'pfLight',sans-serif;
+	$thin:'pfThin',sans-serif;
+/* ========== $fonts =========== */
+@mixin opacity($opacity) {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity * 100})";
+  filter: alpha(opacity=#{$opacity * 100});
+  -moz-opacity: $opacity;
+  -khtml-opacity: $opacity;
+  opacity: $opacity;
+}
+/* ========== general =========== */
+html, body {
+    height:100%;
+    font: $main;
+	color:$mainText;
+    }
+div{margin:auto;}
+
+h1{
+    font:24px $bold;
+    color: $hBlue;
+    text-transform: uppercase;
+}
+h2{
+    font:20px $medium;
+    color: $footerH;
+}
+h3{
+    font:18px $bold;
+    color: $footerH;
+    text-transform: uppercase;
+}
+.no-pad{padding:0;}
+.clearfix{float:none; clear:both;}
+.centration{text-align:center;}
+
+/* ======== header ======= */
+.topLogo{
+	width:225px;
+	height:34px;
+	display:block;
+	background:url(../img/topLogo.png);
+}
