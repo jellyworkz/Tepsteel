@@ -9,9 +9,12 @@
         <title>TepSteel</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		
 		<script src="js/html5shiv.js"></script>
 		<script src="js/jquery-1.11.1.js"></script>
+		<script src="js/jquery.carouFredSel-6.2.1.js"></script>
 		<script src="js/script.js"></script>
 
         <link rel="stylesheet" href="css/grid.css">
@@ -23,12 +26,99 @@
         <![endif]-->
     </head>
     <body>
-		<header>
-			<div class=container_15>
+		<div class=container_15>
+			<header>	
 				<div class="grid_3">
 					<a href="/" class="topLogo"></a>
 				</div>
-			</div>
-		</header>
+				<div class="grid_1"><p>&nbsp;</p></div>
+				<div class="grid_2">
+					<p>+38 (056) 778-58-98</p>
+					<p>+38 (056) 236-13-05</p>
+				</div>
+				<div class="grid_2">
+					<p>+38 (056) 778-13-02</p>
+					<p><a href="mailto:info@tep.dp.ua">info@tep.dp.ua</a></p>
+				</div>
+				<div class="grid_4 right">
+					<form class="serachForm">
+						<input type="text" name="search">
+					</form>
+					<div class="langBlock right">
+						<a href="#">en</a>
+						<a href="#" class="activeLang">ru</a>
+						<a href="#">ge</a>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</header>
+			<div class="grid_15 menuBlock">
+				<ul>
+					<li>
+						<a href="">
+							<span class="nawImg main"></span>
+							Главная
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="nawImg about"></span>
+							О компании
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="nawImg prod"></span>
+							Продукция
+							<span class="bottArr"></span>
+						</a>
+						<ul class='inner'>
+							<li><a href="">Металлопрокат</a></li>
+							<li><a href="">Ферросплавы</a></li>
+							<li><a href="">Марганцеая руда</a></li>
+							<li><a href="">Трубы</a></li>
+							<li><a href="">Карбамид</a></li>
+							
+						</ul>
+					</li>
+					<li>
+						<a href="">
+							<span class="nawImg partners"></span>
+							Партнеры
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="nawImg news"></span>
+							Новости
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="nawImg contact"></span>
+							Контакты
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<span class="nawImg price"></span>
+							Прайс-лист
+						</a>
+					</li>
+					<div class="clear"></div>
+				</ul>
+			</div> <!-- end grid_15 -->
+			<div class="clear"></div>
+		</div> <!-- end container_15 -->
+		<div class="sliderWraqpper">
+			<div class="list_carousel">
+                <div id="foo2">
+					<img src="img/slider1.png" width="1284" height="383" class="slide">
+					<img src="img/slider2.png" width="1284" height="383" class="slide">
+                </div>
+                <div class="clearfix"></div>
+                <div class="pager2"></div>
+            </div><!--// end list_carousel-->
+		</div>
     </body>
 </html>
