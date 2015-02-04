@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'pfThin';
-    src: url('font/pfdintextpro-thin-webfont.eot');
-    src: url('font/pfdintextpro-thin-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/pfdintextpro-thin-webfont.woff') format('woff'),
-         url('font/pfdintextpro-thin-webfont.ttf') format('truetype'),
-         url('font/pfdintextpro-thin-webfont.svg#pf_dintext_prothin') format('svg');
+    src: url('../font/pfdintextpro-thin-webfont.eot');
+    src: url('../font/pfdintextpro-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfdintextpro-thin-webfont.woff') format('woff'),
+         url('../font/pfdintextpro-thin-webfont.ttf') format('truetype'),
+         url('../font/pfdintextpro-thin-webfont.svg#pf_dintext_prothin') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -15,11 +15,11 @@
 
 @font-face {
     font-family: 'pfReg';
-    src: url('font/pfdintextpro_reg-webfont.eot');
-    src: url('font/pfdintextpro_reg-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/pfdintextpro_reg-webfont.woff') format('woff'),
-         url('font/pfdintextpro_reg-webfont.ttf') format('truetype'),
-         url('font/pfdintextpro_reg-webfont.svg#pf_dintext_proregular') format('svg');
+    src: url('../font/pfdintextpro_reg-webfont.eot');
+    src: url('../font/pfdintextpro_reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfdintextpro_reg-webfont.woff') format('woff'),
+         url('../font/pfdintextpro_reg-webfont.ttf') format('truetype'),
+         url('../font/pfdintextpro_reg-webfont.svg#pf_dintext_proregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -30,11 +30,11 @@
 
 @font-face {
     font-family: 'pfBold';
-    src: url('font/pfdintextpro-bold-webfont.eot');
-    src: url('font/pfdintextpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/pfdintextpro-bold-webfont.woff') format('woff'),
-         url('font/pfdintextpro-bold-webfont.ttf') format('truetype'),
-         url('font/pfdintextpro-bold-webfont.svg#pf_dintext_probold') format('svg');
+    src: url('../font/pfdintextpro-bold-webfont.eot');
+    src: url('../font/pfdintextpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfdintextpro-bold-webfont.woff') format('woff'),
+         url('../font/pfdintextpro-bold-webfont.ttf') format('truetype'),
+         url('../font/pfdintextpro-bold-webfont.svg#pf_dintext_probold') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -45,11 +45,11 @@
 
 @font-face {
     font-family: 'pfLight';
-    src: url('font/pdfinpextpro-light-webfont.eot');
-    src: url('font/pdfinpextpro-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/pdfinpextpro-light-webfont.woff') format('woff'),
-         url('font/pdfinpextpro-light-webfont.ttf') format('truetype'),
-         url('font/pdfinpextpro-light-webfont.svg#pf_dintext_prolight') format('svg');
+    src: url('../font/pdfinpextpro-light-webfont.eot');
+    src: url('../font/pdfinpextpro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pdfinpextpro-light-webfont.woff') format('woff'),
+         url('../font/pdfinpextpro-light-webfont.ttf') format('truetype'),
+         url('../font/pdfinpextpro-light-webfont.svg#pf_dintext_prolight') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -60,11 +60,11 @@
 
 @font-face {
     font-family: 'pfMed';
-    src: url('font/pfdintextpro-medium-webfont.eot');
-    src: url('font/pfdintextpro-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/pfdintextpro-medium-webfont.woff') format('woff'),
-         url('font/pfdintextpro-medium-webfont.ttf') format('truetype'),
-         url('font/pfdintextpro-medium-webfont.svg#pf_dintext_promedium') format('svg');
+    src: url('../font/pfdintextpro-medium-webfont.eot');
+    src: url('../font/pfdintextpro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfdintextpro-medium-webfont.woff') format('woff'),
+         url('../font/pfdintextpro-medium-webfont.ttf') format('truetype'),
+         url('../font/pfdintextpro-medium-webfont.svg#pf_dintext_promedium') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -115,6 +115,11 @@ $footerDark:#4a4a4a;
   -khtml-opacity: $opacity;
   opacity: $opacity;
 }
+@mixin box-sizing($rule){
+	box-sizing: $rule;
+	-moz-box-sizing:$rule; /*Firefox 1-3*/
+	-webkit-box-sizing:$rule ; /* Safari */
+}
 
 // folder,filename,extension,repeat,x-pos,y-pos
 @mixin background ($x:0, $y:0) {
@@ -136,11 +141,17 @@ h1{
     text-transform: uppercase;
 }
 h2{
-    font:20px $medium;
+    font:18px $bold;
     color: $footerH;
+	text-transform: uppercase;
 }
 h3{
     font:18px $bold;
+    color: $footerH;
+    text-transform: uppercase;
+}
+h4{
+    font:14px $light;
     color: $footerH;
     text-transform: uppercase;
 }
@@ -167,7 +178,6 @@ header{
 		width:225px;
 		height:34px;
 		display:block;
-		background:url(../img/topLogo.png);
 	}
 	.serachForm {
 		text-align:right;
@@ -184,7 +194,7 @@ header{
 			text-decoration:none;
 			font:12px $regular;
 			color:$headerText;
-			&:hover,.activeLang{
+			&:hover,&.activeLang{
 				color:$menuBlue;
 			}
 			&:before{
@@ -198,7 +208,7 @@ header{
 	}
 	
 } /* end header */
-.menuBlock{width:1190px!important;}
+.menuBlock{width:1190px!important;
 ul{
 	display:block;
 	margin:o auto;
@@ -214,16 +224,17 @@ ul{
 				top:40px;
 				border-top:1px solid #88ccf2;
 				width:100%;
+				z-index:5;
 				li{
 					float:none;
 					list-style:none;
 					border:none;
 					
 					a{
-						width:168px;
+						width:167px;
 						display:block;
 						text-align:center;
-						padding:12px 0;
+						padding:7px 0;
 						background:$menuLightBlue;
 						text-transform:inherit;
 						
@@ -285,3 +296,214 @@ ul{
 			}
 		}
 } /* end nav */
+}
+/* slider */
+.sliderWrapper{
+	position:relative;
+	overflow:hidden;
+	.list_carousel{
+		img.slide{
+			display: block;
+			float: left;
+			height: auto;
+			visibility: hidden;
+			width: 100%;
+		}
+	}
+	.pagWrapper{
+		position:absolute;
+		background:rgba(5,75,117,0.7);
+		width:100%;
+		bottom:0px;
+		.pager2{
+			float:right;
+			padding:7px 0;
+			margin-right:10px;
+			a{
+				display:block;
+				float:left;
+				width:11px;
+				height:3px;
+				background:$white;
+				margin-right:5px;
+				@include opacity(0.5);
+				span{display:none;}
+				&.selected{@include opacity(1);}
+			}
+		}
+	}
+	
+}  /* end slider */
+.contentWrapper{
+	/* .leftBlockContent{width:261px;margin:0 auto;} */
+	background:#f3f3f3;
+	padding-bottom:60px;
+	.grid_5{
+		/* position:relative;
+		top:-218px;
+		z-index:5; */
+		margin-top:-215px;
+	}
+	.whiteBlock{
+		background:$footerH;
+		padding:55px 57px 59px;
+		h2{
+			color:$hBlue;
+			margin-bottom: 21px;
+			font-size:20px;
+		}
+	}
+	.videoBlock{height:230px;}
+	.darkBlock{
+		padding:55px 57px 59px;
+		background:#202020;
+		h2{
+			margin-bottom: 21px;
+		}
+		p{color:$mainTetxLight;}
+	}
+	.blueBlock{
+		padding:55px 50px 59px 57px;
+		background:$hBlue;
+	}
+	.bigContent{
+		background:$white;
+		margin-top:22px;
+		padding:53px 59px 90px;
+		@include box-sizing(border-box);
+		h1{margin-bottom:28px;}
+		.linkblock{
+			margin-bottom:155px;
+			.alpha{margin-left:-10px;}
+			ul{
+				li{
+					list-style-image:url('../img/liDot.png');
+					list-style-position:inside; 
+					/* margin-bottom: 9px; */
+					padding:13px 10px;
+					&:hover {
+							background:#e5f0f7;
+						}
+					a{
+						display:inline-table;
+						width:95%;
+						text-decoration:none;
+						color:$mainText;
+						@include transition(0.2s);
+						&:hover {
+							background:#e5f0f7;
+						}
+					}
+				}
+			}
+		}
+		.bannerBlock{
+			background:url('../img/bannBckg.jpg') no-repeat;
+			@include transition(0.2s);
+			&:hover{@include opacity(0.8)}
+			a{
+				display:block;
+				@include box-sizing(border-box);
+				padding:26px 98px 20px;
+				text-decoration:none;
+				text-transform:uppercase;
+				color:$footerH;
+				font:20px $medium;
+				span{
+					font:14px $thin;
+					display:block;
+					text-transform:initial;
+					margin-top:4px;
+				}
+			}
+		}
+	}
+} /* end contentWrapper */
+footer{
+	background:#202020;
+	padding-top:55px;
+	
+	.copyRight{
+		color:#424242;
+		position: relative;
+		top: -15px;
+		float:left;
+	}
+	h4{
+		margin-bottom:17px;
+	}
+	ul{
+		li{
+			list-style:none;
+			margin-bottom:2px;
+			a{
+				text-decoration:none;
+				color:#919191;
+				font-size:12px;
+				&:hover{text-decoration:underline;}
+			}
+		}
+	}
+	.footerContact{
+		p{
+			color:#404040;
+			font-size:12px;
+		}
+		a{color:#2a5676;
+			&:hover{text-decoration:none;}
+		}
+	}
+	.footerLogo{display:block; float:right;}
+	.langBlock{
+		margin: 139px 0 38px;
+		a{
+			text-decoration:none;
+			font:12px $regular;
+			color:$headerText;
+			&:hover,&.activeLang{
+				color:$menuBlue;
+			}
+			&:before{
+				content:"|";
+				color:#323131;
+				margin:0 6px 0 0;
+			}
+			&:before:hover{color:#323131;}
+			&:first-child:before{content:''!important;}
+		}
+	}
+	.textContact{
+		border-left:1px solid #2f2f2f;
+		padding-left:38px;
+		margin-left: 30px;
+		.footerContact{
+			margin-bottom:20px;
+		}
+		.noMarg{margin-bottom:0!important;}
+	}
+	.darkFooter{
+		margin-top:10px;
+		background:#1b1b1b;
+		padding:5px 0;
+		p{float:left;margin-top: 10px;}
+		a{
+			display:block;
+			margin:0 auto;
+			width:65px;
+			
+		}
+	}
+	.footerSoc{
+		a{
+			width:26px;
+			height:26px;
+			float:left;
+			@include transition(0.2s);
+			&:hover{@include opacity(0.8)}
+			margin-left:7px;
+			
+		}
+		.yt{background:url('../img/ytIcon.png') no-repeat;}
+		.in{background:url('../img/inIcon.png') no-repeat;}
+	}
+} /* end footer */

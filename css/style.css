@@ -1,31 +1,31 @@
 @font-face {
   font-family: 'pfThin';
-  src: url("font/pfdintextpro-thin-webfont.eot");
-  src: url("font/pfdintextpro-thin-webfont.eot?#iefix") format("embedded-opentype"), url("font/pfdintextpro-thin-webfont.woff") format("woff"), url("font/pfdintextpro-thin-webfont.ttf") format("truetype"), url("font/pfdintextpro-thin-webfont.svg#pf_dintext_prothin") format("svg");
+  src: url("../font/pfdintextpro-thin-webfont.eot");
+  src: url("../font/pfdintextpro-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../font/pfdintextpro-thin-webfont.woff") format("woff"), url("../font/pfdintextpro-thin-webfont.ttf") format("truetype"), url("../font/pfdintextpro-thin-webfont.svg#pf_dintext_prothin") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'pfReg';
-  src: url("font/pfdintextpro_reg-webfont.eot");
-  src: url("font/pfdintextpro_reg-webfont.eot?#iefix") format("embedded-opentype"), url("font/pfdintextpro_reg-webfont.woff") format("woff"), url("font/pfdintextpro_reg-webfont.ttf") format("truetype"), url("font/pfdintextpro_reg-webfont.svg#pf_dintext_proregular") format("svg");
+  src: url("../font/pfdintextpro_reg-webfont.eot");
+  src: url("../font/pfdintextpro_reg-webfont.eot?#iefix") format("embedded-opentype"), url("../font/pfdintextpro_reg-webfont.woff") format("woff"), url("../font/pfdintextpro_reg-webfont.ttf") format("truetype"), url("../font/pfdintextpro_reg-webfont.svg#pf_dintext_proregular") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'pfBold';
-  src: url("font/pfdintextpro-bold-webfont.eot");
-  src: url("font/pfdintextpro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("font/pfdintextpro-bold-webfont.woff") format("woff"), url("font/pfdintextpro-bold-webfont.ttf") format("truetype"), url("font/pfdintextpro-bold-webfont.svg#pf_dintext_probold") format("svg");
+  src: url("../font/pfdintextpro-bold-webfont.eot");
+  src: url("../font/pfdintextpro-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../font/pfdintextpro-bold-webfont.woff") format("woff"), url("../font/pfdintextpro-bold-webfont.ttf") format("truetype"), url("../font/pfdintextpro-bold-webfont.svg#pf_dintext_probold") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'pfLight';
-  src: url("font/pdfinpextpro-light-webfont.eot");
-  src: url("font/pdfinpextpro-light-webfont.eot?#iefix") format("embedded-opentype"), url("font/pdfinpextpro-light-webfont.woff") format("woff"), url("font/pdfinpextpro-light-webfont.ttf") format("truetype"), url("font/pdfinpextpro-light-webfont.svg#pf_dintext_prolight") format("svg");
+  src: url("../font/pdfinpextpro-light-webfont.eot");
+  src: url("../font/pdfinpextpro-light-webfont.eot?#iefix") format("embedded-opentype"), url("../font/pdfinpextpro-light-webfont.woff") format("woff"), url("../font/pdfinpextpro-light-webfont.ttf") format("truetype"), url("../font/pdfinpextpro-light-webfont.svg#pf_dintext_prolight") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'pfMed';
-  src: url("font/pfdintextpro-medium-webfont.eot");
-  src: url("font/pfdintextpro-medium-webfont.eot?#iefix") format("embedded-opentype"), url("font/pfdintextpro-medium-webfont.woff") format("woff"), url("font/pfdintextpro-medium-webfont.ttf") format("truetype"), url("font/pfdintextpro-medium-webfont.svg#pf_dintext_promedium") format("svg");
+  src: url("../font/pfdintextpro-medium-webfont.eot");
+  src: url("../font/pfdintextpro-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../font/pfdintextpro-medium-webfont.woff") format("woff"), url("../font/pfdintextpro-medium-webfont.ttf") format("truetype"), url("../font/pfdintextpro-medium-webfont.svg#pf_dintext_promedium") format("svg");
   font-weight: normal;
   font-style: normal; }
 * {
@@ -51,11 +51,17 @@ h1 {
   text-transform: uppercase; }
 
 h2 {
-  font: 20px "pfMed", sans-serif;
-  color: #fbfbfb; }
+  font: 18px "pfBold", sans-serif;
+  color: #fbfbfb;
+  text-transform: uppercase; }
 
 h3 {
   font: 18px "pfBold", sans-serif;
+  color: #fbfbfb;
+  text-transform: uppercase; }
+
+h4 {
+  font: 14px "pfLight", sans-serif;
   color: #fbfbfb;
   text-transform: uppercase; }
 
@@ -86,8 +92,7 @@ header {
   header .topLogo {
     width: 225px;
     height: 34px;
-    display: block;
-    background: url(../img/topLogo.png); }
+    display: block; }
   header .serachForm {
     text-align: right; }
     header .serachForm input[type=text] {
@@ -101,7 +106,7 @@ header {
       text-decoration: none;
       font: 12px "pfReg", sans-serif;
       color: #737373; }
-      header .langBlock a:hover, header .langBlock a .activeLang {
+      header .langBlock a:hover, header .langBlock a.activeLang {
         color: #0093ec; }
       header .langBlock a:before {
         content: "|";
@@ -114,60 +119,243 @@ header {
 
 /* end header */
 .menuBlock {
-  width: 1190px !important; }
-
-ul {
-  display: block;
-  margin: o auto;
-  width: 1185px; }
-  ul li {
-    float: left;
-    list-style: none;
-    position: relative;
-    border-left: 1px solid #b0def9;
-    /* &:hover>ul{display:block;} */ }
-    ul li:first-child {
-      border: none; }
-    ul li ul {
-      display: none;
-      position: absolute;
-      top: 40px;
-      border-top: 1px solid #88ccf2;
-      width: 100%; }
-      ul li ul li {
-        float: none;
-        list-style: none;
-        border: none; }
-        ul li ul li a {
-          width: 168px;
-          display: block;
-          text-align: center;
-          padding: 12px 0;
-          background: #31a7f0;
-          text-transform: inherit; }
-          ul li ul li a:hover {
-            background: #0093ec; }
-            ul li ul li a:hover ul {
-              display: block;
-              -webkit-transition: all 0.2s ease;
-              /* Safari 3.2+, Chrome */
-              -moz-transition: all 0.2s ease;
-              /* Firefox 4-15 */
-              -o-transition: all 0.2s ease;
-              /* Opera 10.5-12.00 */
-              transition: all 0.2s ease;
-              /* Firefox 16+, Opera 12.50+ */ }
-    ul li a {
-      background: #0093ec;
-      color: #fff;
-      font: 13px "pfLight", sans-serif;
-      text-decoration: none;
-      text-transform: uppercase;
-      width: 167.5px;
-      display: block;
-      text-align: center;
-      padding: 12px 0;
+  width: 1190px !important;
+  /* end nav */ }
+  .menuBlock ul {
+    display: block;
+    margin: o auto;
+    width: 1185px; }
+    .menuBlock ul li {
+      float: left;
+      list-style: none;
       position: relative;
+      border-left: 1px solid #b0def9;
+      /* &:hover>ul{display:block;} */ }
+      .menuBlock ul li:first-child {
+        border: none; }
+      .menuBlock ul li ul {
+        display: none;
+        position: absolute;
+        top: 40px;
+        border-top: 1px solid #88ccf2;
+        width: 100%;
+        z-index: 5; }
+        .menuBlock ul li ul li {
+          float: none;
+          list-style: none;
+          border: none; }
+          .menuBlock ul li ul li a {
+            width: 167px;
+            display: block;
+            text-align: center;
+            padding: 7px 0;
+            background: #31a7f0;
+            text-transform: inherit; }
+            .menuBlock ul li ul li a:hover {
+              background: #0093ec; }
+              .menuBlock ul li ul li a:hover ul {
+                display: block;
+                -webkit-transition: all 0.2s ease;
+                /* Safari 3.2+, Chrome */
+                -moz-transition: all 0.2s ease;
+                /* Firefox 4-15 */
+                -o-transition: all 0.2s ease;
+                /* Opera 10.5-12.00 */
+                transition: all 0.2s ease;
+                /* Firefox 16+, Opera 12.50+ */ }
+      .menuBlock ul li a {
+        background: #0093ec;
+        color: #fff;
+        font: 13px "pfLight", sans-serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        width: 167.5px;
+        display: block;
+        text-align: center;
+        padding: 12px 0;
+        position: relative;
+        -webkit-transition: all 0.2s ease;
+        /* Safari 3.2+, Chrome */
+        -moz-transition: all 0.2s ease;
+        /* Firefox 4-15 */
+        -o-transition: all 0.2s ease;
+        /* Opera 10.5-12.00 */
+        transition: all 0.2s ease;
+        /* Firefox 16+, Opera 12.50+ */ }
+        .menuBlock ul li a:hover, .menuBlock ul li a .activeMenu {
+          background: #31a7f0; }
+          .menuBlock ul li a:hover ul, .menuBlock ul li a .activeMenu ul {
+            display: block; }
+          .menuBlock ul li a:hover .nawImg, .menuBlock ul li a:hover .bottArr, .menuBlock ul li a .activeMenu .nawImg, .menuBlock ul li a .activeMenu .bottArr {
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+            filter: alpha(opacity=100);
+            -moz-opacity: 1;
+            -khtml-opacity: 1;
+            opacity: 1; }
+        .menuBlock ul li a .nawImg {
+          width: 25px;
+          height: 25px;
+          display: block;
+          position: absolute;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+          filter: alpha(opacity=30);
+          -moz-opacity: 0.3;
+          -khtml-opacity: 0.3;
+          opacity: 0.3;
+          left: 8px;
+          top: 7px; }
+        .menuBlock ul li a .bottArr {
+          display: block;
+          position: absolute;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+          filter: alpha(opacity=30);
+          -moz-opacity: 0.3;
+          -khtml-opacity: 0.3;
+          opacity: 0.3;
+          width: 11px;
+          height: 11px;
+          right: 7px;
+          top: 15px;
+          background-image: url(../img/sprite.png);
+          background-repeat: no-repeat;
+          background-position: -97px -62px; }
+        .menuBlock ul li a .main {
+          background-image: url(../img/sprite.png);
+          background-repeat: no-repeat;
+          background-position: -13px -8px; }
+        .menuBlock ul li a .about {
+          background-image: url(../img/sprite.png);
+          background-repeat: no-repeat;
+          background-position: -56px -8px; }
+        .menuBlock ul li a .prod {
+          background-image: url(../img/sprite.png);
+          background-repeat: no-repeat;
+          background-position: -98px -8px; }
+        .menuBlock ul li a .partners {
+          background-image: url(../img/sprite.png);
+          background-repeat: no-repeat;
+          background-position: -139px -8px; }
+        .menuBlock ul li a .news {
+          background-image: url(../img/sprite.png);
+          background-repeat: no-repeat;
+          background-position: -184px -9px; }
+        .menuBlock ul li a .contact {
+          background-image: url(../img/sprite.png);
+          background-repeat: no-repeat;
+          background-position: -229px -9px; }
+        .menuBlock ul li a .price {
+          background-image: url(../img/sprite.png);
+          background-repeat: no-repeat;
+          background-position: -275px -8px; }
+
+/* slider */
+.sliderWrapper {
+  position: relative;
+  overflow: hidden; }
+  .sliderWrapper .list_carousel img.slide {
+    display: block;
+    float: left;
+    height: auto;
+    visibility: hidden;
+    width: 100%; }
+  .sliderWrapper .pagWrapper {
+    position: absolute;
+    background: rgba(5, 75, 117, 0.7);
+    width: 100%;
+    bottom: 0px; }
+    .sliderWrapper .pagWrapper .pager2 {
+      float: right;
+      padding: 7px 0;
+      margin-right: 10px; }
+      .sliderWrapper .pagWrapper .pager2 a {
+        display: block;
+        float: left;
+        width: 11px;
+        height: 3px;
+        background: #fff;
+        margin-right: 5px;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+        filter: alpha(opacity=50);
+        -moz-opacity: 0.5;
+        -khtml-opacity: 0.5;
+        opacity: 0.5; }
+        .sliderWrapper .pagWrapper .pager2 a span {
+          display: none; }
+        .sliderWrapper .pagWrapper .pager2 a.selected {
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+          filter: alpha(opacity=100);
+          -moz-opacity: 1;
+          -khtml-opacity: 1;
+          opacity: 1; }
+
+/* end slider */
+.contentWrapper {
+  /* .leftBlockContent{width:261px;margin:0 auto;} */
+  background: #f3f3f3;
+  padding-bottom: 60px; }
+  .contentWrapper .grid_5 {
+    /* position:relative;
+    top:-218px;
+    z-index:5; */
+    margin-top: -215px; }
+  .contentWrapper .whiteBlock {
+    background: #fbfbfb;
+    padding: 55px 57px 59px; }
+    .contentWrapper .whiteBlock h2 {
+      color: #067ece;
+      margin-bottom: 21px;
+      font-size: 20px; }
+  .contentWrapper .videoBlock {
+    height: 230px; }
+  .contentWrapper .darkBlock {
+    padding: 55px 57px 59px;
+    background: #202020; }
+    .contentWrapper .darkBlock h2 {
+      margin-bottom: 21px; }
+    .contentWrapper .darkBlock p {
+      color: #b1b1b1; }
+  .contentWrapper .blueBlock {
+    padding: 55px 50px 59px 57px;
+    background: #067ece; }
+  .contentWrapper .bigContent {
+    background: #fff;
+    margin-top: 22px;
+    padding: 53px 59px 90px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /*Firefox 1-3*/
+    -webkit-box-sizing: border-box;
+    /* Safari */ }
+    .contentWrapper .bigContent h1 {
+      margin-bottom: 28px; }
+    .contentWrapper .bigContent .linkblock {
+      margin-bottom: 155px; }
+      .contentWrapper .bigContent .linkblock .alpha {
+        margin-left: -10px; }
+      .contentWrapper .bigContent .linkblock ul li {
+        list-style-image: url("../img/liDot.png");
+        list-style-position: inside;
+        /* margin-bottom: 9px; */
+        padding: 13px 10px; }
+        .contentWrapper .bigContent .linkblock ul li:hover {
+          background: #e5f0f7; }
+        .contentWrapper .bigContent .linkblock ul li a {
+          display: inline-table;
+          width: 95%;
+          text-decoration: none;
+          color: #303030;
+          -webkit-transition: all 0.2s ease;
+          /* Safari 3.2+, Chrome */
+          -moz-transition: all 0.2s ease;
+          /* Firefox 4-15 */
+          -o-transition: all 0.2s ease;
+          /* Opera 10.5-12.00 */
+          transition: all 0.2s ease;
+          /* Firefox 16+, Opera 12.50+ */ }
+          .contentWrapper .bigContent .linkblock ul li a:hover {
+            background: #e5f0f7; }
+    .contentWrapper .bigContent .bannerBlock {
+      background: url("../img/bannBckg.jpg") no-repeat;
       -webkit-transition: all 0.2s ease;
       /* Safari 3.2+, Chrome */
       -moz-transition: all 0.2s ease;
@@ -176,72 +364,119 @@ ul {
       /* Opera 10.5-12.00 */
       transition: all 0.2s ease;
       /* Firefox 16+, Opera 12.50+ */ }
-      ul li a:hover, ul li a .activeMenu {
-        background: #31a7f0; }
-        ul li a:hover ul, ul li a .activeMenu ul {
-          display: block; }
-        ul li a:hover .nawImg, ul li a:hover .bottArr, ul li a .activeMenu .nawImg, ul li a .activeMenu .bottArr {
-          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-          filter: alpha(opacity=100);
-          -moz-opacity: 1;
-          -khtml-opacity: 1;
-          opacity: 1; }
-      ul li a .nawImg {
-        width: 25px;
-        height: 25px;
+      .contentWrapper .bigContent .bannerBlock:hover {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+        filter: alpha(opacity=80);
+        -moz-opacity: 0.8;
+        -khtml-opacity: 0.8;
+        opacity: 0.8; }
+      .contentWrapper .bigContent .bannerBlock a {
         display: block;
-        position: absolute;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-        filter: alpha(opacity=30);
-        -moz-opacity: 0.3;
-        -khtml-opacity: 0.3;
-        opacity: 0.3;
-        left: 8px;
-        top: 7px; }
-      ul li a .bottArr {
-        display: block;
-        position: absolute;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-        filter: alpha(opacity=30);
-        -moz-opacity: 0.3;
-        -khtml-opacity: 0.3;
-        opacity: 0.3;
-        width: 11px;
-        height: 11px;
-        right: 7px;
-        top: 15px;
-        background-image: url(../img/sprite.png);
-        background-repeat: no-repeat;
-        background-position: -97px -62px; }
-      ul li a .main {
-        background-image: url(../img/sprite.png);
-        background-repeat: no-repeat;
-        background-position: -13px -8px; }
-      ul li a .about {
-        background-image: url(../img/sprite.png);
-        background-repeat: no-repeat;
-        background-position: -56px -8px; }
-      ul li a .prod {
-        background-image: url(../img/sprite.png);
-        background-repeat: no-repeat;
-        background-position: -98px -8px; }
-      ul li a .partners {
-        background-image: url(../img/sprite.png);
-        background-repeat: no-repeat;
-        background-position: -139px -8px; }
-      ul li a .news {
-        background-image: url(../img/sprite.png);
-        background-repeat: no-repeat;
-        background-position: -184px -9px; }
-      ul li a .contact {
-        background-image: url(../img/sprite.png);
-        background-repeat: no-repeat;
-        background-position: -229px -9px; }
-      ul li a .price {
-        background-image: url(../img/sprite.png);
-        background-repeat: no-repeat;
-        background-position: -275px -8px; }
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        /*Firefox 1-3*/
+        -webkit-box-sizing: border-box;
+        /* Safari */
+        padding: 26px 98px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fbfbfb;
+        font: 20px "pfMed", sans-serif; }
+        .contentWrapper .bigContent .bannerBlock a span {
+          font: 14px "pfThin", sans-serif;
+          display: block;
+          text-transform: initial;
+          margin-top: 4px; }
 
-/* end nav */
+/* end contentWrapper */
+footer {
+  background: #202020;
+  padding-top: 55px; }
+  footer .copyRight {
+    color: #424242;
+    position: relative;
+    top: -15px;
+    float: left; }
+  footer h4 {
+    margin-bottom: 17px; }
+  footer ul li {
+    list-style: none;
+    margin-bottom: 2px; }
+    footer ul li a {
+      text-decoration: none;
+      color: #919191;
+      font-size: 12px; }
+      footer ul li a:hover {
+        text-decoration: underline; }
+  footer .footerContact p {
+    color: #404040;
+    font-size: 12px; }
+  footer .footerContact a {
+    color: #2a5676; }
+    footer .footerContact a:hover {
+      text-decoration: none; }
+  footer .footerLogo {
+    display: block;
+    float: right; }
+  footer .langBlock {
+    margin: 139px 0 38px; }
+    footer .langBlock a {
+      text-decoration: none;
+      font: 12px "pfReg", sans-serif;
+      color: #737373; }
+      footer .langBlock a:hover, footer .langBlock a.activeLang {
+        color: #0093ec; }
+      footer .langBlock a:before {
+        content: "|";
+        color: #323131;
+        margin: 0 6px 0 0; }
+      footer .langBlock a:before:hover {
+        color: #323131; }
+      footer .langBlock a:first-child:before {
+        content: "" !important; }
+  footer .textContact {
+    border-left: 1px solid #2f2f2f;
+    padding-left: 38px;
+    margin-left: 30px; }
+    footer .textContact .footerContact {
+      margin-bottom: 20px; }
+    footer .textContact .noMarg {
+      margin-bottom: 0 !important; }
+  footer .darkFooter {
+    margin-top: 10px;
+    background: #1b1b1b;
+    padding: 5px 0; }
+    footer .darkFooter p {
+      float: left;
+      margin-top: 10px; }
+    footer .darkFooter a {
+      display: block;
+      margin: 0 auto;
+      width: 65px; }
+  footer .footerSoc a {
+    width: 26px;
+    height: 26px;
+    float: left;
+    -webkit-transition: all 0.2s ease;
+    /* Safari 3.2+, Chrome */
+    -moz-transition: all 0.2s ease;
+    /* Firefox 4-15 */
+    -o-transition: all 0.2s ease;
+    /* Opera 10.5-12.00 */
+    transition: all 0.2s ease;
+    /* Firefox 16+, Opera 12.50+ */
+    margin-left: 7px; }
+    footer .footerSoc a:hover {
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+      filter: alpha(opacity=80);
+      -moz-opacity: 0.8;
+      -khtml-opacity: 0.8;
+      opacity: 0.8; }
+  footer .footerSoc .yt {
+    background: url("../img/ytIcon.png") no-repeat; }
+  footer .footerSoc .in {
+    background: url("../img/inIcon.png") no-repeat; }
+
+/* end footer */
 
 /*# sourceMappingURL=style.css.map */
