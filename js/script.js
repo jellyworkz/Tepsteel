@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(window).load(function(){
 	$('.menuBlock>ul>li').hover(
 		function(){
 			$(this).children().css({'background':'#31a7f0'}).find('.nawImg,.bottArr').css({'opacity':'1'});
@@ -19,7 +19,7 @@ $(document).ready(function(){
                     mousewheel: true,
                     responsive: true,
                     circular: false,
-                    auto: false,
+                    auto: true,
                     items: {
                     visible: 1,
                     },
