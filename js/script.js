@@ -19,7 +19,10 @@ $(window).load(function(){
                     mousewheel: true,
                     responsive: true,
                     circular: false,
-                    auto: true,
+                    auto: {
+                    timeoutDuration: 5000,
+                    },
+                    
                     items: {
                     visible: 1,
                     },
@@ -28,7 +31,8 @@ $(window).load(function(){
                         onTouch: true
                     },
                     scroll: {
-                        fx: 'directscroll'
+                        fx: 'directscroll',
+                        pauseOnHover    : true,
                     },
                     onCreate: function () {
                     $(window).on('resize', function () {
