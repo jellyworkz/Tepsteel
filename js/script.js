@@ -44,4 +44,11 @@ $(window).load(function(){
                 });
 
         }//slider end
+
+        if ( $('.caseForm')[0] ){
+            $(".caseForm").validationEngine();
+
+        }    
+
+
 });//document ready end

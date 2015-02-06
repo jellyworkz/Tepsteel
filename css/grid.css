@@ -153,7 +153,9 @@ body {
 
 /* Prefix Extra Space >> 15 Columns
 ----------------------------------------------------------------------------------------------------*/
-
+.container_15 .prefix_01 {
+	padding-left:60px;
+}
 
 .container_15 .prefix_1 {
 	padding-left:80px;
@@ -215,7 +217,9 @@ body {
 
 /* Suffix Extra Space >> 15 Columns
 ----------------------------------------------------------------------------------------------------*/
-
+.container_15 .suffix_01 {
+	padding-right:60px;
+}
 
 .container_15 .suffix_1 {
 	padding-right:25px;

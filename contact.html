@@ -15,9 +15,13 @@
 		<script src="js/html5shiv.js"></script>
 		<script src="js/jquery-1.11.1.js"></script>
 		<script src="js/jquery.carouFredSel-6.2.1.js"></script>
+		<script src="js/jquery.validationEngine.js"></script>
+		<script src="js/jquery.validationEngine-en.js"></script>
+		<script src="js/jquery.validationEngine-ru.js"></script>
 		<script src="js/script.js"></script>
 
         <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/validationEngine.jquery.css">
 		<link rel="stylesheet" href="css/style.css">
 
         <!--[if lt IE 9]>
@@ -95,7 +99,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="contact.html">
+						<a href="contact.html" class="activeMenu">
 							<span class="nawImg contact"></span>
 							Контакты
 						</a>
@@ -111,70 +115,168 @@
 			</div> <!-- end grid_15 -->
 			<div class="clear"></div>
 		</div> <!-- end container_15 -->
-		<div class="sliderWrapper">
-			<div class="list_carousel">
-                <div id="foo2">
-					<img src="img/slide1.jpg" width="1284" height="383" class="slide">
-					<img src="img/slide2.jpg" width="1284" height="383" class="slide">
-					<img src="img/slide3.jpg" width="1284" height="383" class="slide">
-					<img src="img/slide4.jpg" width="1284" height="383" class="slide">
-					<img src="img/slide5.jpg" width="1284" height="383" class="slide">
-                </div>
-                <div class="clearfix"></div>
-                <div class="pagWrapper">
-					<div class="container_15">
-						<div class="pager2"></div>
-					</div> 
+
+		<div class="bredcrumbs">
+			<div class="container_15">
+				<div  class="grid_15">
+					<span></span>
+					<a href="">Контакты</a>
 				</div>
-					
-				
-            </div><!--// end list_carousel-->
-		</div> <!-- end sliderWrapper -->
+			</div>
+		</div>
+
 		<div class="contentWrapper">
 			<div class="container_15">
-				<div class="grid_5">
+				<div class="grid_5 normalMargin">
+					<div class="darkBlock">
+						<h2>Ocтавить отзыв:</h2>
+						<form class="caseForm">
+							<input type="text" name="" placeholder="Ваше имя" class="validate[required]">
+							<input type="text" name="" placeholder="Ваш e-mail" class="validate[required],custom[email]">
+							<textarea placeholder="Ваше сообщение"></textarea>
+							<input type="submit"  value="Отправить" class="button">
+						</form>
+					</div>
+					<div class="leftBanner">
+						<a href="">
+								расширение ассортимента 2015
+								<span>Узнайте подробнее</span>
+						</a>
+					</div>
 					<div class="whiteBlock">
-						<h2>ТехЭнергоПром - металлотрейдинговая компания</h2>
 						<p>Холдинг "ТехЭнергоПром" – один из ведущих игроков торговли металлом, как на внутреннем рынке Украины, так и на рынках ближнего и дальнего зарубежья.</p>
 					</div>
-					<div class="videoBlock">
-						<iframe width="100%" height="230" src="https://www.youtube.com/embed/L07FU_BNxTg" frameborder="0" allowfullscreen></iframe>
-					</div>
-					<div class="darkBlock">
-						<h2>цель:</h2>
-						<p>Помочь покупателям металлопроката приобрести товар высочайшего качества в запрошенных объемах и в указанные сроки на взаимовыгодных условиях.</p>
-					</div>
-					<div class="blueBlock">
-						<a href="">
-							<h2>Мы работаем с заводами -  изготовителями и трейдерами по всему миру!</h2>
-						</a>
-					</div>
 				</div>
-				<div class="grid_10 bigContent">
-					<h1>Наши преимущества</h1>
+				<div class="grid_10 bigContent normalMargin">
 					<div class="linkblock">
-						<div class="grid_4 alpha">
-							<ul>
-								<li><a href="">Отсутствие посредников, работа напрямую с заводами-производителями и их официальными представителями;</a></li>
-								<li><a href="">Возможность реализовывать крупные партии металлопроката засчет отлаженных рабочих процессов</a></li>
-								<li><a href="">Положительная, многолетняя, подтвержденная партнерами репутация компании;</a></li>
-							</ul>
-						</div>
-						<div class="grid_4">
-							<ul>
-								<li><a href="">Оперативность, индивидуальный подход, достоверность информации;</a></li>
-								<li><a href="">Высокое качество, разумные цены на металлопрокат;</a></li>
-								<li><a href="">Надежность, честность, открытость, дипломатичность, квалифицированность сотрудников.</a></li>
-							</ul>
-						</div>
-						<div class="clearfix"></div>
+						<div class="grid_8">
+							<div class="colored-block prefix_01 suffix_01"><!--start colored-block-->
+								<div class="department">
+								<h1>ООО «НПП ТехЭнергоПром» </h1>
+									<p class="head">Украина (головной офис) </p>
+									<p>49070, Украина, г. Днепропетровск, </p>
+									<p>ул. Московская, 6</p>
+
+									<div class="grid_3 bordered">
+										<p class="head">Директор:</p>
+										<p>Савушкин Вадим Витальевич</p>
+										<p>+38 (0562) 36-13-05</p>
+										<p>+38 (056) 778-58-98</p>
+										<p>+38 (056) 778-13-02 [факс]</p>
+										<p><a href="mailto:info@tep.dp.ua">e-mail: info@tep.dp.ua</a></p>
+									</div>
+									<div class="grid_3">
+										<span class="item">
+											<span>
+												<span class="item_cont">
+													<span class="item_cell">
+														<img src="img/ph01.png" width="172" height="" alt="" class="">
+													</span>
+												</span>
+											</span>
+										</span>
+									</div>
+									<div class="clearfix"></div>
+									<div class="grid_3 bordered">
+										<p class="head">Руководитель отдела ВЭД:</p>
+										<p>Можаренко Елена Николаевна</p>
+										<p>+38 (098) 293-67-49</p>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>	<!-- // end colored-block-->
+
+							<div class="colored-block prefix_01 suffix_01"><!--start colored-block-->
+								<div class="department">
+								<h1>ООО «НПП «ТехЭнергоПром Р»</h1>
+									<p class="head">141077, Российская федерация</p>
+									<p>Московская область г. Королев,</p>
+									<p>Октябрьский бульвар, д. 12, оф. 810</p>
+
+									<div class="grid_3 bordered">
+										<p class="head">генеральный Директор:</p>
+										<p>Яриновская Людмила Кузьминична</p>
+										<p>+7 (495) 728-60-52</p>
+										<p>+7 (963) 697-93-00</p>
+										<p>+7 (915) 326-04-73</p>
+										<p><a href="mailto:tep-p@mail.ru">e-mail: tep-p@mail.ru</a></p>
+									</div>
+									<div class="grid_3">
+										<span class="item">
+											<span>
+												<span class="item_cont">
+													<span class="item_cell">
+														<img src="img/phW.jpg" width="172" height="" alt="" class="">
+													</span>
+												</span>
+											</span>
+										</span>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>	<!-- // end colored-block-->	
+
+							<div class="colored-block prefix_01 suffix_01"><!--start colored-block-->
+								<div class="department">
+								<h1>Dolphin Steel LTD </h1>
+									<p class="head">британское подразделение</p>
+									<p>48 Queen Anne St., London W1G 9JJ,</p>
+									<p>England</p>
+
+									<div class="grid_3 bordered">
+										<p class="head">Официальный представитель в Украине:</p>
+										<p>Савушкин Вадим</p>
+										<p>+38 (0562) 36-13-05</p>
+										<p><a href="mailto:dolphinsteelltd@gmail.com">e-mail: dolphinsteelltd@gmail.com</a></p>
+									</div>
+									<div class="grid_3">
+										<span class="item">
+											<span>
+												<span class="item_cont">
+													<span class="item_cell">
+														<img src="img/phM.jpg" width="172" height="" alt="" class="">
+													</span>
+												</span>
+											</span>
+										</span>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>	<!-- // end colored-block-->
+
+							<div class="colored-block prefix_01 suffix_01"><!--start colored-block-->
+								<div class="department">
+								<h1>ООО «НПП «ТехЭнергоПром Georgia»</h1>
+									<p class="head">Республика Грузия, </p>
+									<p>г. Тбилиси</p>
+									<div class="grid_3 bordered">
+										<p class="head">Директор:</p>
+										<p>Жвания Александр</p>
+										<p>+9 (955) 687-396-30
+										<p>+9 (955) 515-335-65</p>
+										<p><a href="mailto:aliko1021@mail.ru">e-mail: aliko1021@mail.ru</a></p>
+									</div>
+									<div class="grid_3">
+										<span class="item">
+											<span>
+												<span class="item_cont">
+													<span class="item_cell">
+														<img src="img/phM.jpg" width="172" height="" alt="" class="">
+													</span>
+												</span>
+											</span>
+										</span>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>	<!-- // end colored-block-->
+								
+							<div class="clearfix"></div>
+							</div>	
+							<div class="clearfix"></div>
+						</div> <!-- end colored-block -->
 					</div> <!-- end linkblock -->
-					<div class="bannerBlock">
-						<a href="">
-							расширение ассортимента 2015
-							<span>Узнайте подробнее</span>
-						</a>
-					</div>
+
 				</div>
 				<div class="clearfix"></div>
 			</div> 
