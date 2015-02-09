@@ -155,6 +155,11 @@ h4{
     color: $footerH;
     text-transform: uppercase;
 }
+h5{
+    font:14px $bold;
+    color: #202020;
+    text-transform: uppercase;
+}
 .no-pad{padding:0;}
 .clearfix{float:none; clear:both;}
 .centration{text-align:center;}
@@ -397,6 +402,27 @@ ul{
 		padding:53px 59px 90px;
 		@include box-sizing(border-box);
 		h1{margin-bottom:28px;}
+		
+		p,h5{
+			margin-bottom:18px;
+			color:#202020;
+		}
+		h5{margin-top:39px;}
+		ul li{
+			list-style-position:inside;
+			margin-bottom:19px;
+		}
+		.greyTextBlock{
+			background:#e9f3fb;
+			padding:21px 0 26px 20px;
+			margin-bottom: 9px;
+			h5{margin-top:0;}
+			p{margin-bottom:0;}
+		}
+		.telBlock{
+			margin-bottom:18px;
+			p{margin-bottom:0;}
+		}
 		.linkblock{
 			margin-bottom:155px;
 			.alpha{margin-left:-10px;}
@@ -590,7 +616,7 @@ footer{
 		text-align:center;
 		float:left;
 		@include transition(0.2s);
-			&:hover{@include opacity(0.8)}
+			&:hover{@include opacity(0.8);text-decoration:none;}
 		&:last-of-type{
 			&:hover{@include opacity(1);cursor:unset;}
 		}
@@ -606,7 +632,13 @@ a:hover {
 	text-decoration:underline;
 }
 .colored-block{
-	background:#f9f9ee;
+	background:#f9f9ee; 
+	padding: 45px 10px 45px 67px; 
+	margin-top: 32px;
+	width:550px;
+	&:first-child{ 
+		margin-top: 0px;
+		}
 	.head{
 		font-family: $bold;
 		text-transform: uppercase;
@@ -617,6 +649,11 @@ a:hover {
 		}	
 	.bordered{
 		border-top:1px solid #dbe2e6;
+		margin: 19px 0 2px;
+		padding-top: 17px;
+		.move-block{
+			margin:18px 0;
+			}
 	}	
 }
 /*================= image centration =================*/
@@ -629,7 +666,7 @@ a:hover {
     overflow: hidden;
     width: 172px;
     float: right;
-
+    margin: 17px 27px 0px 0px;
     & > span{
 	    display: block;
 	    position: relative;
@@ -664,11 +701,16 @@ a:hover {
 		outline: none;
 		font-size: 14px;
 		font-family: $thin;
-		padding:15px 5px;
+		padding: 10px 5px;
+		margin-bottom: 7px;
 		}
+	.button{
+		right: -10px;
+		bottom: 7px;
+		}	
 	textarea{
 		resize: none;
-		height:200px;
+		height:145px; 
 		}
 	}
 .button{
@@ -679,10 +721,10 @@ a:hover {
 	font-family:$bold;
 	text-transform:uppercase;
 	background:#3588c0;
-	min-width:100px;
+	min-width:130px;
 	display:block;
 	text-align:center;
-	padding:14px 10px;
+	padding:10px 15px;
 	border:none;
 	outline: none;
 	cursor: pointer;
