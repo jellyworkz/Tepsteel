@@ -15,9 +15,14 @@
 		<script src="js/html5shiv.js"></script>
 		<script src="js/jquery-1.11.1.js"></script>
 		<script src="js/jquery.carouFredSel-6.2.1.js"></script>
+		<script src="js/jquery.validationEngine.js"></script>
+		<script src="js/jquery.validationEngine-en.js"></script>
+		<script src="js/jquery.validationEngine-ru.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
 		<script src="js/script.js"></script>
 
         <link rel="stylesheet" href="css/grid.css">
+        <link rel="stylesheet" href="css/validationEngine.jquery.css">
 		<link rel="stylesheet" href="css/style.css">
 
         <!--[if lt IE 9]>
@@ -83,7 +88,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="partners.html">
+						<a href="partners.html"  class="activeMenu">
 							<span class="nawImg partners"></span>
 							Партнеры
 						</a>
@@ -101,7 +106,7 @@
 						</a>
 					</li>
 					<li>
-						<a href="download.html" class="activeMenu">
+						<a href="download.html">
 							<span class="nawImg price"></span>
 							Скачать
 						</a>
@@ -111,19 +116,41 @@
 			</div> <!-- end grid_15 -->
 			<div class="clear"></div>
 		</div> <!-- end container_15 -->
+
 		<div class="bredcrumbs">
 			<div class="container_15">
 				<div  class="grid_15">
 					<span></span>
-					<a href="">Скачать</a>
+					<a href="">Контакты</a>
 				</div>
 			</div>
 		</div>
+
 		<div class="contentWrapper">
 			<div class="container_15">
 				<div class="grid_5 normalMargin">
-					<div class="leftBlockHead">
-						<h1>Скачать</h1>
+					<div class="leftBanner-bg">
+						<h1>наши партнеры</h1>
+					</div>
+					<div class="side-menu mapMenu">
+						<ul>
+							<li><a href="javascript:void(0)"><span></span>"SABINA PAK LTD" Российское представительство г. Москва</a></li>
+							<li><a href="javascript:void(0)"><span></span>PAK Steel LIMITED, Пакистан</a></li>
+							<li><a href="javascript:void(0)"><span></span>KIBAR HOLDIND Турция</a></li>
+							<li><a href="javascript:void(0)"  class="active"><span></span>Iskenderun Demir Ve Celik, Турция</a></li>
+							<li><a href="javascript:void(0)"><span></span>Ismir Ve Celik, Турция</a></li>
+							<li><a href="javascript:void(0)"><span></span>Profile Metal, Турция</a></li>
+							<li><a href="javascript:void(0)"><span></span>Hatko, Турция</a></li>
+							<li><a href="javascript:void(0)"><span></span>Pronar, Польша</a></li>
+							<li><a href="javascript:void(0)"><span></span>Gantrex S.A. Бельгия</a></li>
+							<li><a href="javascript:void(0)"><span></span>Gantry Railing LTD Англия</a></li>
+							<li><a href="javascript:void(0)"><span></span>Marcegallia s.r.o.,  Италия</a></li>
+							<li><a href="javascript:void(0)"><span></span>Hunan Great Steel Co LTD, Китай</a></li>
+							<li><a href="javascript:void(0)"><span></span>BAO Steel, Kитай</a></li>
+						</ul>
+					</div>
+					<div class="allPartBlock">
+						<a href="">Показать всех (54)</a>
 					</div>
 					<div class="leftBanner">
 						<a href="">
@@ -135,89 +162,11 @@
 						<p>Холдинг "ТехЭнергоПром" – один из ведущих игроков торговли металлом, как на внутреннем рынке Украины, так и на рынках ближнего и дальнего зарубежья.</p>
 					</div>
 				</div>
-				<div class="grid_10 bigContent normalMargin">
-					<div class="loadItem">
-						<a href="">
-							<div class="leftSide">
-								<span></span>
-							</div>
-							<div class="rightSide">
-								<h1>Сертификаты ТЕХеНерГОПРОМ</h1>
-								<p>Полный перечень сертификатов на 2015 год</p>
-							</div>
-							<div class="clearfix"></div>
-						</a>
-						
-					</div>
-					<div class="loadItem">
-						<a href="">
-							<div class="leftSide">
-								<span></span>
-							</div>
-							<div class="rightSide">
-								<h1>ГОСТ - 2015</h1>
-								<p>Стандарты работы</p>
-							</div>
-							<div class="clearfix"></div>
-						</a>
-						
-					</div>
-					<div class="loadItem">
-						<a href="">
-							<div class="leftSide">
-								<span></span>
-							</div>
-							<div class="rightSide">
-								<h1>КАТАЛОГ ПРОДУКЦИИ</h1>
-								<p>Каталог продукции Техенергопром на 2015 год. Расширение ассортимента!</p>
-							</div>
-							<div class="clearfix"></div>
-						</a>
-						
-					</div>
-					<div class="loadItem">
-						<a href="">
-							<div class="leftSide">
-								<span></span>
-							</div>
-							<div class="rightSide">
-								<h1>Технические описания</h1>
-								<p>Всех видов нашей продукции</p>
-							</div>
-							<div class="clearfix"></div>
-						</a>
-						
-					</div>
-					<div class="loadItem">
-						<a href="">
-							<div class="leftSide">
-								<span></span>
-							</div>
-							<div class="rightSide">
-								<h1>Презентации</h1>
-								<p>Клиентская презентация</p>
-							</div>
-							<div class="clearfix"></div>
-						</a>
-						
-					</div>
-					<div class="loadItem">
-						<a href="">
-							<div class="leftSide">
-								<span></span>
-							</div>
-							<div class="rightSide">
-								<h1>ПРАЙС-ЛИСТ</h1>
-								<p>Наши цены</p>
-							</div>
-							<div class="clearfix"></div>
-						</a>
-						
-					</div>
-				</div>
-				<div class="clearfix"></div>
-			</div> 
+				<div class="grid_10">
+					<div id="map"></div>
+				</div> 
 			<div class="clearfix"></div>
+			</div> 
 		</div><!-- end contentWrapper -->
 		<footer>
 			<div class="container_15">

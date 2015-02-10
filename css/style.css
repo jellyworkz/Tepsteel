@@ -596,6 +596,53 @@ header {
         text-transform: initial; }
 
 /* end contentWrapper */
+#map {
+  width: 100%;
+  height: 1065px; }
+
+.mapMenu ul li a {
+  font: 13px "pfReg", sans-serif !important;
+  position: relative; }
+  .mapMenu ul li a span {
+    background: url("../img/miniMarker.png") 0 100% no-repeat;
+    width: 11px;
+    height: 14px;
+    display: inline-block;
+    left: 23px;
+    position: absolute; }
+  .mapMenu ul li a:hover span, .mapMenu ul li a.active span {
+    background-position: 0 0; }
+
+.allPartBlock {
+  background: #d4e9ff;
+  width: 100%;
+  padding: 20px 0; }
+  .allPartBlock a {
+    width: 180px;
+    text-align: center;
+    font: 14px "pfBold", sans-serif;
+    color: #fbfbfb;
+    background: #3588c0;
+    padding: 9px 0px;
+    display: block;
+    margin-left: 60px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s linear;
+    /* Safari 3.2+, Chrome */
+    -moz-transition: all 0.2s linear;
+    /* Firefox 4-15 */
+    -o-transition: all 0.2s linear;
+    /* Opera 10.5-12.00 */
+    transition: all 0.2s linear;
+    /* Firefox 16+, Opera 12.50+ */ }
+    .allPartBlock a:hover {
+      text-decoration: none;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+      filter: alpha(opacity=80);
+      -moz-opacity: 0.8;
+      -khtml-opacity: 0.8;
+      opacity: 0.8 !important; }
+
 footer {
   background: #202020;
   padding-top: 55px; }
@@ -940,5 +987,97 @@ a:hover {
     font-family: "pfLight", sans-serif; }
 
 /*================= // catalog page =================*/
+/*================= detailes page =================*/
+.contentWrapper .detailed {
+  background: #fff;
+  -webkit-box-shadow: 2px 2px 0px 0px #dadada;
+  -moz-box-shadow: 2px 2px 0px 0px #dadada;
+  box-shadow: 2px 2px 0px 0px #dadada; }
+  .contentWrapper .detailed h2 {
+    color: #067ece;
+    font-size: 24px;
+    font-family: "pfMed", sans-serif;
+    margin-bottom: 16px;
+    max-width: 50%; }
+  .contentWrapper .detailed h5 {
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 22px;
+    margin-bottom: 11px; }
+  .contentWrapper .detailed table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 31px; }
+    .contentWrapper .detailed table tr:nth-child(even) {
+      background: #f7f7f7; }
+    .contentWrapper .detailed table tr td, .contentWrapper .detailed table tr th {
+      padding: 10px 8px;
+      border: 1px solid #c5c5c5;
+      text-align: left; }
+      .contentWrapper .detailed table tr td:first-child, .contentWrapper .detailed table tr th:first-child {
+        color: #067ece;
+        font-family: "pfBold", sans-serif; }
+  .contentWrapper .detailed .note {
+    margin-bottom: 31px;
+    color: #989898; }
+.contentWrapper .grid-style {
+  display: table;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: none;
+  padding: 0; }
+  .contentWrapper .grid-style:hover {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+  .contentWrapper .grid-style h3 {
+    color: #fff; }
+  .contentWrapper .grid-style .left-side, .contentWrapper .grid-style .right-side {
+    display: table-cell;
+    float: none;
+    vertical-align: middle; }
+  .contentWrapper .grid-style .right-side {
+    background: #067ece;
+    width: 201px;
+    padding: 0 19px; }
+.contentWrapper .detailed-other {
+  -webkit-box-shadow: 2px 2px 0px 0px #dadada;
+  -moz-box-shadow: 2px 2px 0px 0px #dadada;
+  box-shadow: 2px 2px 0px 0px #dadada; }
+  .contentWrapper .detailed-other .grid-style {
+    float: left;
+    margin-top: 11px; }
+  .contentWrapper .detailed-other .item {
+    height: 98px;
+    width: 240px; }
+    .contentWrapper .detailed-other .item .item_cell {
+      height: 98px; }
+  .contentWrapper .detailed-other h2 {
+    color: #067ece;
+    font-size: 24px;
+    font-family: "pfMed", sans-serif;
+    margin-bottom: 33px; }
+  .contentWrapper .detailed-other h3 {
+    font-size: 16px;
+    font-family: "pfBold", sans-serif; }
+  .contentWrapper .detailed-other h5 {
+    color: #067ece;
+    margin: 0; }
+  .contentWrapper .detailed-other table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 31px;
+    margin-top: 3px; }
+    .contentWrapper .detailed-other table tr td, .contentWrapper .detailed-other table tr th {
+      padding: 10px 8px;
+      border: 1px solid #c5c5c5;
+      text-align: left;
+      width: 123px; }
+  .contentWrapper .detailed-other .note {
+    margin-bottom: 31px;
+    color: #989898; }
+
+/*================= // detailes page =================*/
 
 /*# sourceMappingURL=style.css.map */
