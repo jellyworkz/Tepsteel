@@ -1,16 +1,16 @@
 $(window).load(function(){
-	$('.menuBlock>ul>li').hover(
-		function(){
-			$(this).children().css({'background':'#31a7f0'}).find('.nawImg,.bottArr').css({'opacity':'1'});
-			$(this).find('.inner').stop().slideDown();
-		},
-		function(){
-			$(this).children().css({'background':'#0093ec'}).find('.nawImg,.bottArr').css({'opacity':'0.3'});
-			$(this).find('.inner').stop().slideUp();
-		}
-	); //menu hover end
-	
-	if ( $('#foo2')[0] ){ 
+    $('.menuBlock>ul>li').hover(
+        function(){
+            $(this).children().css({'background':'#31a7f0'}).find('.nawImg,.bottArr').css({'opacity':'1'});
+            $(this).find('.inner').stop().slideDown();
+        },
+        function(){
+            $(this).children().css({'background':'#0093ec'}).find('.nawImg,.bottArr').css({'opacity':'0.3'});
+            $(this).find('.inner').stop().slideUp();
+        }
+    ); //menu hover end
+    
+    if ( $('#foo2')[0] ){ 
                var carousel = $("#foo2");
                 carousel.carouFredSel({
                     width: "100%",
@@ -60,6 +60,8 @@ $(window).load(function(){
 
 });//document ready end
 
+$(document).ready(function(){
+    if ( $('#map')[0] ){
 var image1 = 'img/marker.png';
 google.maps.event.addDomListener(window, 'load', init);
         
@@ -228,23 +230,24 @@ google.maps.event.addDomListener(window, 'load', init);
                 var marker = new google.maps.Marker({
                     position: new google.maps.LatLng(50.444898, 30.493215),
                     map: map,
-					icon: image1,
+                    icon: image1,
                     title: 'Snazzy!'
                 });
-				 var Marker = new google.maps.Marker({
+                 var Marker = new google.maps.Marker({
                     position: new google.maps.LatLng(48.453260, 35.064334),
                     map: map,
                     icon: image1
                 });
-				var Marker = new google.maps.Marker({
+                var Marker = new google.maps.Marker({
                     position: new google.maps.LatLng(53.905619, 27.482962),
                     map: map,
                     icon: image1
                 });
-				var Marker = new google.maps.Marker({
+                var Marker = new google.maps.Marker({
                     position: new google.maps.LatLng(55.802503, 37.546438),
                     map: map,
                     icon: image1
                 });
             }
-//end map
+}//end map
+});
