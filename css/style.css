@@ -1079,5 +1079,32 @@ a:hover {
     color: #989898; }
 
 /*================= // detailes page =================*/
+/*=================  site links =================*/
+.siteLinks {
+  margin-bottom: 10px;
+  float: right; }
+  .siteLinks li {
+    float: left;
+    margin-left: 5px;
+    list-style: none; }
+    .siteLinks li a {
+      display: block;
+      width: 21px;
+      height: 15px;
+      background: url(../img/flags.png) no-repeat 0px 0px; }
+      .siteLinks li a.ua {
+        background-position: 0px 0px; }
+      .siteLinks li a.g {
+        background-position: -36px  0px; }
+      .siteLinks li a.en {
+        background-position: -69px 0px; }
+      .siteLinks li a.ru {
+        background-position: -105px 0px; }
+      .siteLinks li a:hover {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+        filter: alpha(opacity=70);
+        -moz-opacity: 0.7;
+        -khtml-opacity: 0.7;
+        opacity: 0.7 !important; }
 
 /*# sourceMappingURL=style.css.map */

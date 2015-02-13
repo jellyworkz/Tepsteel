@@ -1126,3 +1126,37 @@ a:hover {
 
 
 /*================= // detailes page =================*/
+
+
+/*=================  site links =================*/
+.siteLinks{
+	margin-bottom:10px;
+	float: right;
+	li{
+		float: left;
+		margin-left: 5px;
+		list-style: none;
+		a{
+		display: block;
+		width: 21px;
+		height: 15px;
+    	background: url(../img/flags.png) no-repeat 0px 0px;
+    	&.ua{
+    		background-position:0px 0px;
+    		}	
+    	&.g{
+    		background-position:-36px  0px;
+    		}	
+    	&.en{
+    		background-position:-69px 0px;
+    		}	
+    	&.ru{
+    		background-position:-105px 0px;
+    		}	
+		&:hover{
+			@include opacity(0.7);
+			}
+		}
+	}
+	
+}
