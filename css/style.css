@@ -649,10 +649,17 @@ header {
       -khtml-opacity: 0.8;
       opacity: 0.8 !important; }
 
+footer > div {
+  position: relative; }
+
 footer {
   background: #202020;
   padding-top: 55px;
   line-height: 17px; }
+  footer .footer-fix {
+    position: absolute;
+    right: 0;
+    bottom: 2px; }
   footer .copyRight {
     color: #424242;
     position: relative;

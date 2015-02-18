@@ -651,7 +651,13 @@ filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Colo
 		}
 	}
 }
+footer > div{position:relative;}
 footer{
+	.footer-fix{
+		position: absolute;
+		right: 0;
+		bottom: 2px;
+	}
 	background:#202020;
 	padding-top:55px;
 	line-height:17px;
